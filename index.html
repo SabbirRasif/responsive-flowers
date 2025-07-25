@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flower Market</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com" src="https://unpkg.com/heroicons@2.0.13"></script>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -16,24 +16,36 @@
   </style>
 </head>
 <body class="text-gray-800">
-     <header class="border-b py-4 ">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 w-1140 ">
-             <div class="logo text-2xl text-orange-500 font-bold"><img class="w-135 h-82" src="assets/logo.png" alt=""></div>
-             <nav class="mt-2 md:mt-0">
-                 <ul class="flex gap-6 text-sm font-medium items-center">
-                     <li><a href="#" class="hover:text-orange-500">Home</a></li>
-                     <li><a href="#" class="hover:text-orange-500">Plants</a></li>
-                     <li><a href="#" class="hover:text-orange-500">About us</a></li>
-                      <li><a href="#" class="hover:text-orange-500 flex items-center gap-1">🛒 Cart(0)</a></li>
-                 </ul>
-             </nav>
-        </div>
-     </header>
+<header class="border-b py-4">
+  <div class="container mx-auto px-4 w-full">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="./assets/logo.png" alt="Logo" class="w-[63px] h-[38px]" />
+      </div>
+      <nav class="flex items-center gap-6">  
+        <ul class="hidden md:flex gap-6 text-sm font-medium items-center">
+          <li><a href="#" class="hover:text-orange-500">Home</a></li>
+          <li><a href="#" class="hover:text-orange-500">Plants</a></li>
+          <li><a href="#" class="hover:text-orange-500">About us</a></li>
+        </ul>
+<a href="#" class="flex items-center gap-1 text-sm font-medium text-gray-800">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.6 8h13.2M7 13L5.4 5M16 16a1 1 0 11-2 0 1 1 0 012 0zm-8 0a1 1 0 102 0 1 1 0 00-2 0z" />
+  </svg>
+  Cart($0)
+</a>
+
+      </nav>
+
+    </div>
+  </div>
+</header>
+
      <section class="py-12 bg-gray-50 w-1140 m-150">
-        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-4 w-1140">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-0 w-1140">
              <div class="md:w-1/2">
-                  <h1 class="text-4xl font-bold leading-tight">ALWAYS <span class="text-orange-500">FRESH</span> <br> FLOWERS</h1>
-        <p class="mt-4 text-gray-600 max-w-md">We deliver freshly picked and arranged flowers to your door, making every moment memorable and fresh.</p>
+                  <h1 class="text-4xl font-bold leading-tight">ALWAYS <span class="text-orange-500">FRESH <br> FLOWERS </span></h1>
+        <p class="mt-4 text-gray-600 max-w-md">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
              </div>
               <div class="md:w-1/2">
                 <img src="assets/hero-flower.png" alt="Flowers" class="w-570 h-355 max-w-570 h-355 mx-auto">
@@ -45,7 +57,7 @@
         <span class="text-orange-500">Our</span> <span class="text-gray-800">Plants</span>
       </h2>
          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8">Browse our collection of beautifully curated plants, each handpicked to bring life and freshness into your home or workspace.</p>
-             <div class="grid grid-cols-1  sm:grid-cols-2  lg:grid-cols-4 gap-6 w-270 h-484 ">
+             <div class="grid grid-cols-2  sm:grid-cols-2  lg:grid-cols-4 gap-6 w-270 h-484 ">
         <div class="flex flex-col items-center border rounded-lg p-4 shadow-sm hover:shadow-md transition">
           <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-135 object-cover rounded mb-4">
           <div class="text-center">
@@ -186,23 +198,24 @@
   </div>
 </div>
       </section>
-<footer class="bg-white w-full flex justify-center px-4 py-6 md:py-8">
-  <div class="w-[1120px] h-[248px] flex flex-col md:flex-row md:flex-wrap justify-between items-center md:items-start text-gray-700 text-center md:text-left">
-    <div class="mb-4 md:mb-6 lg:mb-0 w-full md:w-auto">
-      <div class="flex items-center justify-center md:justify-start mb-2">
+<footer class="w-full bg-white px-4 py-6">
+  <div class="max-w-[1440px] h-auto md:h-[348px] mx-auto flex flex-col md:flex-row justify-start md:justify-between items-start text-left text-gray-700">
+    <div class="mb-2 md:mb-0">
+      <div class="flex items-center mb-2">
         <img src="assets/logo.png" alt="Logo" class="w-135 h-82 mr-2" />
       </div>
-      <p class="max-w-xs mx-auto md:mx-0 text-22">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+      <p class="text-22 w-[359px]  ">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
     </div>
-
     <div class="flex flex-col sm:flex-row gap-6 md:gap-8 mb-4 md:mb-0">
-      <div class="flex flex-col gap-1">
+      <div class="flex flex-col gap-[32px] w-[85px] h-[248px] mb-6 md:mb-0">
+        <a href="#" class="hover:underline">Home</a>
         <a href="#" class="hover:underline">About us</a>
         <a href="#" class="hover:underline">Blog</a>
         <a href="#" class="hover:underline">FAQ</a>
         <a href="#" class="hover:underline">Contact us</a>
       </div>
-      <div class="flex flex-col gap-1">
+      <div class="flex flex-col gap-[32px] w-[128px] h-[248px] mb-6 md:mb-0">
+        <a href="#" class="hover:underline">Features</a>
         <a href="#" class="hover:underline">Privacy Policy</a>
         <a href="#" class="hover:underline">Terms of Service</a>
         <a href="#" class="hover:underline">Help Center</a>
@@ -210,7 +223,7 @@
       </div>
     </div>
 
-    <div class="flex gap-4 mt-4 md:mt-0 justify-center">
+    <div class="flex gap-4 w-[216px] h-[36px] mt-4 md:mt-0 justify-start">
       <a href="#" class="text-gray-500 hover:text-gray-700"><img src="assets/icon-linkedin.png" class="w-sm h-sm" alt=""></a>
     <a href="#" class="text-gray-500 hover:text-gray-700"><img src="assets/icon-facebook.png" alt=""></a>
       <a href="#" class="text-gray-500 hover:text-gray-700"><img src="assets/icon-youtube.png" alt=""></a>
